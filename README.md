@@ -3,11 +3,14 @@
 A step by step instruction on getting and downloading all emotes in the Emote Collector database.
 
 ## 0. install the requirements 
-Two non-standard packages are required to run this project:
+Three non-standard packages are required to run this project:
 - yarl
-- requests  
+- requests
+- tqdm
 
-`yarl` (yet another url library) was my package of choice for working with URLs. `requests` is used to handle API requests and download emojis from Discord.  
+`yarl` (yet another url library) was my package of choice for working with URLs.  
+`requests` is used to handle API requests and download emojis from Discord.  
+`tqdm` is a progress bar manager to make the downloader a little more bearable.
 You can install these two using pip like so: 
 ```sh
 # Windows

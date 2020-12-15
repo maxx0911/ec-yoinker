@@ -2,6 +2,7 @@ import json
 import os
 
 import requests
+from tqdm import tqdm
 
 BASE_DIR = os.getcwd()
 
@@ -35,7 +36,7 @@ def main():
         ).lower()
         == "y"
     ):
-        for emote in all_emotes:
+        for emote in tqdm(all_emotes, ascii=True, desc="Download progress"):
             res = requests.get(emote["url"])
             filename = build_filename(emote)
             with open(filename, "wb") as EmojiFile:
