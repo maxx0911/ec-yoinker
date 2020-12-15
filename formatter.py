@@ -1,7 +1,9 @@
 import json
+
 import yarl
 
 BASE_URL = yarl.URL("https://cdn.discordapp.com/emojis")
+
 
 def main():
 
@@ -25,7 +27,8 @@ def main():
     if input("Write a list of URLs to url_list.txt? [Y/n] ").lower() == "y":
         print("writing a list of URLs...")
         with open("url_list.txt", "w") as UrlList:
-            UrlList.writelines([obj["url"]+"\n" for obj in new_emotes])
+            UrlList.writelines([obj["url"] + "\n" for obj in new_emotes])
+
 
 if __name__ == "__main__":
     main()
