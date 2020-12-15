@@ -11,10 +11,10 @@ Two non-standard packages are required to run this project:
 You can install these two using pip like so: 
 ```sh
 # Windows
-pip install -U yarl requests
+pip install -U -r requirements.txt
 
 # Linux/Mac
-python3 -m pip install -U yarl requests
+python3 -m pip install -U -r requirements.txt
 ```
 
 ## 1. grabbing all emote objects
