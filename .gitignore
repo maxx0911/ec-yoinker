@@ -1,0 +1,6 @@
+config.py
+nsfw/*
+sfw/*
+emotes.json
+emotes_updated.json
+url_list.txt
